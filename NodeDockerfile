@@ -1,0 +1,10 @@
+FROM openjdk:8
+COPY /target/ReadingNode-1.0-SNAPSHOT.jar ReadingNode-1.0-SNAPSHOT.jar
+
+
+
+
+ENV port 134
+CMD echo $port
+ENTRYPOINT java -jar ReadingNode-1.0-SNAPSHOT.jar $port
+
